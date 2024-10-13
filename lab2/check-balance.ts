@@ -11,15 +11,15 @@ const samipublicKey = new PublicKey("9HccTUdELCnUP9fPpv2i9gNcx5JJeQnpAxkwkqXE9Sv
 const balanceInLamports = await connection.getBalance(samipublicKey);
 console.log("sami balance: ", balanceInLamports)
 
-// console.log("airdrop 1 sol to sami....")
+console.log("airdrop 1 sol to sami....")
 
-// await airdropIfRequired(
-//     connection,
-//     samipublicKey,
-//     1*LAMPORTS_PER_SOL,
-//     0.5*LAMPORTS_PER_SOL,
+await airdropIfRequired(
+    connection,
+    samipublicKey,
+    1*LAMPORTS_PER_SOL,
+    1.5*LAMPORTS_PER_SOL,
 
-// );
+);
 
 console.log("airdrop done")
 
